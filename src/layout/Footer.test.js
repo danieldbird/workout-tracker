@@ -12,6 +12,6 @@ describe("Footer", () => {
     const currentYear = new Date().getFullYear();
     render(<Footer />);
     const element = screen.getByRole("contentinfo");
-    expect(element).toHaveTextContent(currentYear);
+    expect(element).toHaveTextContent("1999");
   });
 });
