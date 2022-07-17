@@ -5,8 +5,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Layout from "./layout/Layout";
-import Exercises from "./pages/Exercises";
-import Workouts from "./pages/Workouts";
+import Exercises from "./pages/Exercises/Exercises";
+import Workouts from "./pages/Workouts/Workouts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
