@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import Layout from "./layout/Layout";
 import Exercises from "./pages/Exercises/Exercises";
 import Workouts from "./pages/Workouts/Workouts";
+import AddExercise from "./pages/Exercises/AddExercise";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/exercises" element={<Exercises />} />
+          <Route path="/exercises/add" element={<AddExercise />} />
           <Route path="/workouts" element={<Workouts />} />
         </Routes>
       </Layout>
