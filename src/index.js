@@ -1,16 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Layout from "./layout/Layout";
+import Exercises from "./pages/Exercises";
+import Workouts from "./pages/Workouts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Layout>
-      <App />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/exercises" element={<Exercises />} />
+          <Route path="/workouts" element={<Workouts />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
